@@ -667,7 +667,7 @@ function validateSettings(settings) {
         settings.moduleSettings.autoSummaryEnabled = false;
     }
     if (settings.moduleSettings.autoSummaryInterval === undefined ||
-        settings.moduleSettings.autoSummaryInterval < 10) {
+        settings.moduleSettings.autoSummaryInterval < 2) {
         settings.moduleSettings.autoSummaryInterval = 100;
     }
     if (settings.moduleSettings.autoSummaryBuffer === undefined || settings.moduleSettings.autoSummaryBuffer < 0) {
