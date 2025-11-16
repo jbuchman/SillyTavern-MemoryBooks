@@ -2435,7 +2435,7 @@ toastr.error(translate('Failed to import profiles', 'STMemoryBooks_FailedToImpor
 
         if (e.target.matches('#stmb-auto-summary-interval')) {
             const value = parseInt(e.target.value);
-            if (!isNaN(value) && value >= 10 && value <= 200) {
+            if (!isNaN(value) && value >= 2 && value <= 200) {
                 settings.moduleSettings.autoSummaryInterval = value;
                 saveSettingsDebounced();
             }
